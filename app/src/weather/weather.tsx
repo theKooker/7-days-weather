@@ -6,7 +6,7 @@ import { BsWind, BsEyeFill} from "react-icons/bs";
 import { WiHumidity} from "react-icons/wi";
 
 
-const API_KEY = "68f4f88e8fd253b20b5f874d557322d7";
+const API_KEY = "969ffdf26fcefccf82fc1d58d51c212a";
 const WEATHER_API ="https://api.openweathermap.org/data/2.5/forecast?q={city name}&units=metric&appid=" +API_KEY;
 const ICON_URL = "https://openweathermap.org/img/wn/{icon}@4x.png";
 const WEEK_DAYS = ["Monday", "Tuesdays", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];

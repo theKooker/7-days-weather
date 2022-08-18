@@ -10,13 +10,10 @@ function App() {
   const [searchText, setSearchText] = useState("Munich");
   const [cityName, setCityName] = useState("Munich");
   const handleChange = (event: any) => {
-    
     setSearchText(event.target.value);
   };
   function getCityWeather() {
-    console.log(searchText);
     setCityName(searchText);
-    
   }
   return (
     <div className="App bg-gradient">
