@@ -6,7 +6,7 @@ import { BsWind, BsEyeFill} from "react-icons/bs";
 import { WiHumidity} from "react-icons/wi";
 
 
-const API_KEY = "969ffdf26fcefccf82fc1d58d51c212a";
+export const API_KEY = "969ffdf26fcefccf82fc1d58d51c212a";
 const WEATHER_API ="https://api.openweathermap.org/data/2.5/forecast?q={city name}&units=metric&appid=" +API_KEY;
 const ICON_URL = "https://openweathermap.org/img/wn/{icon}@4x.png";
 const WEEK_DAYS = ["Monday", "Tuesdays", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
@@ -31,7 +31,6 @@ function Weather(props: any) {
               ) {
                 distinctDates.push(str);
                 const iconUrl = ICON_URL.replace("{icon}",item.weather[0].icon.replace("n","d"));
-                console.log(iconUrl);
                 return (
                   <Card className="m-3 p-4" style={{ width: "18rem" }}>
                     <Card.Img variant="top" src={iconUrl} />
